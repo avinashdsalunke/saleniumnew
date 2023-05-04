@@ -20,11 +20,4 @@
 		<nature>org.eclipse.jdt.core.javanature</nature>
 		<nature>org.eclipse.m2e.core.maven2Nature</nature>
 	</natures>
-	<linkedResources>
-		<link>
-			<name>src/main/java/Rsources/data chale.xlsx</name>
-			<type>1</type>
-			<location>F:/data chale.xlsx</location>
-		</link>
-	</linkedResources>
 </projectDescription>
