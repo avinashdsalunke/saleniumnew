@@ -9,6 +9,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Test;
 
 public class baseclass {
 
@@ -44,7 +46,7 @@ public class baseclass {
 	}
 	@BeforeMethod
 	public void launchbrowser() throws IOException {
-		initializeDriver();
+        initializeDriver();
 		String url=prop.getProperty("url");
 		driver.get(url);
 		
@@ -57,9 +59,4 @@ public class baseclass {
 		driver.quit();
 	}
 	*/
-	
-	
-	
-	
-
 }

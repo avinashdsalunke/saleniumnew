@@ -18,21 +18,18 @@ import org.testng.annotations.Test;
 
 import Rsources.baseclass;
 
-public class parallal extends baseclass{
+public class parallal {
 	WebDriver driver;	  
 		@Test
 		  public void method1() throws IOException {
-			initializeDriver();
-
 		  ChromeOptions options= new ChromeOptions();
-		options.addArguments("headless");
+		options.addArguments("--headless");
 	   driver=new ChromeDriver(options);
 		    driver.get("https://login.salesforce.com/?locale=in");
 		System.out.println(driver.getCurrentUrl());
 		      }
 		@Test
 		  public void method2() throws IOException{
-			initializeDriver();
 
 		  FirefoxOptions options= new FirefoxOptions();
 		options.addArguments("--headless");
@@ -40,12 +37,13 @@ public class parallal extends baseclass{
 		    driver.get("https://rahulshettyacademy.com/");
 		    System.out.println(driver.getCurrentUrl());
 }
+		
 		@Test
 		public void method3() throws Exception {
 
   Robot r = new Robot();
 
-		   String path = "C:\\Users\\dell\\Desktop\\screnshot\\test10"+ ".png";
+		   String path = "C:\\Users\\dell\\Desktop\\screnshot\\test175"+ ".png";
 		   Rectangle capture = 
 		   new Rectangle(Toolkit.getDefaultToolkit().getScreenSize());
 		   BufferedImage Image = r.createScreenCapture(capture);
